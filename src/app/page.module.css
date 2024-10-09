@@ -1,0 +1,29 @@
+.randomImage {
+  width: 300px;
+  height: 150px;
+  border: 1px solid black;
+
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 20px;
+}
+
+.randomImage img {
+  border-radius: 50%;
+
+  align-self: center;
+  justify-self: center;
+}
+
+.randomImage div {
+  padding-top: 10px;
+}
+
+.container {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 40px;
+  row-gap: 20px;
+}
