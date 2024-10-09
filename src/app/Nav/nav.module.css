@@ -1,0 +1,17 @@
+.mainNav {
+  height: 50px;
+  background-color: navy;
+  display: flex;
+  justify-content: space-around;
+}
+
+.mainNav li {
+  align-self: center;
+  list-style: none;
+}
+
+.mainNav li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}

@@ -1,5 +1,6 @@
 import pageStyles from "@/app/page.module.css";
 import RandomImage from "./RandomImage";
+import Nav from "./Nav";
 
 const data = [
   {
@@ -55,6 +56,7 @@ export default function Home() {
 
   return (
     <main>
+      <Nav />
       <h1>Home</h1>
       <section className={pageStyles.container}>{randomImages}</section>
     </main>
