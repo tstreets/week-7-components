@@ -42,17 +42,16 @@ const data = [
     imageUrl: "https://picsum.photos/300/300",
     description: "Blah 1",
   },
+  null,
 ];
 
 export default function Home() {
   const randomImages = data.map(function (ranImg) {
-    return (
-      <RandomImage
-        title={ranImg.title}
-        description={ranImg.description}
-        imageUrl={ranImg.imageUrl}
-      />
-    );
+    // if (statement) { return true; } else { return false; }
+    // (statement) ? true : false
+
+    return ranImg ? <RandomImage imageInfo={ranImg} /> : null;
+    // return <RandomImage imageInfo={ranImg} />;
   });
 
   return (
