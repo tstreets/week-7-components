@@ -51,21 +51,12 @@ export default function Home() {
     // (statement) ? true : false
 
     return ranImg ? <RandomImage imageInfo={ranImg} /> : null;
-    // return <RandomImage imageInfo={ranImg} />;
   });
 
   return (
     <main>
       <h1>Home</h1>
       <section className={pageStyles.container}>{randomImages}</section>
-
-      {/* <div className={pageStyles.randomImage}>
-        <img src={data[0].imageUrl} width={100} height={100} />
-        <div>
-          <h4>Title</h4>
-          <p>lorem</p>
-        </div>
-      </div> */}
     </main>
   );
 }
